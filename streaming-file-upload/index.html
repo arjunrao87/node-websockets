@@ -4,9 +4,7 @@
   <script src="https://rawgit.com/binaryjs/binaryjs/master/dist/binary.min.js"></script>
   <script>
     var client = new BinaryClient('ws://localhost:9000');
-    console.log( "Opening...");
     client.on('open', function(){
-      console.log( "Opened!");
       var box = $('#box');
       box.on('dragenter', doNothing);
       box.on('dragover', doNothing);

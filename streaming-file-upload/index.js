@@ -13,7 +13,7 @@ var BinaryClient = require('binaryjs').BinaryClient;
 var bs = BinaryServer({server: server});
 bs.on('connection', function(client){
   client.on('stream', function(stream, meta){
-    var file = fs.createWriteStream(__dirname + meta.name);
+    var file = fs.createWriteStream(__dirname + '/' + meta.name);
     stream.pipe(file);
     stream.on('data', function(data){
       stream.write({rx: data.length / meta.size});
