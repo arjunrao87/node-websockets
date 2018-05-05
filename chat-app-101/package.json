@@ -1,0 +1,16 @@
+{
+  "name": "node-websockets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Arjun Rao <rao.arjun87@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "^0.0.0",
+    "socket.io": "^2.1.0",
+    "ws": "^5.1.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
